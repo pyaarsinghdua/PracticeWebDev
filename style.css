@@ -1,0 +1,9 @@
+input#rollnumber{
+    color: yellowgreen;
+}
+option{
+    color: teal;
+}
+select{
+    background-color: turquoise;
+}
