@@ -74,7 +74,7 @@
             text-align: justify;
         }
 
-        .container1{
+        .container1 {
             border: 2px solid red;
             background-color: rosybrown;
             padding: 34px;
@@ -83,17 +83,18 @@
             margin: auto;
         }
 
-        a:hover{    /* this property defines to what changes to occur while pointing */
+        a:hover {
+            /* this property defines to what changes to occur while pointing */
             color: rgb(52, 223, 18);
             /* background-color: cornflowerblue; */
         }
 
-        a:visited{
+        a:visited {
             color: cyan;
             background-color: darkkhaki;
         }
 
-        .btn{
+        .btn {
             background-color: salmon;
             padding: 6px;
             border: none;
@@ -104,42 +105,96 @@
             color: black;
         }
 
-        .navbar{
+        .navbar {
             background-color: rgb(136, 53, 136);
             border-radius: 36px;
         }
-        .navbar ul{
+
+        .navbar ul {
             overflow: auto;
             /* width: 490px; */
         }
-        .navbar li{
-            float: left;    /* float results in overflow from the parent */
+
+        .navbar li {
+            float: left;
+            /* float results in overflow from the parent */
             list-style: none;
             padding: 34px;
         }
-        .navbar li a{
+
+        .navbar li a {
             text-decoration: none;
             color: black;
         }
-        .search{
+
+        .search {
             float: right;
             padding: 32px;
             margin-right: 50px;
         }
-        #search{
+
+        #search {
             border-radius: 4px;
             box-shadow: black;
         }
-        .navbar li a:hover{
+
+        .navbar li a:hover {
             color: red;
         }
 
+        .top {
+            margin: auto;
+            border: 2px solid red;
+            /* display: inline; using this the block will take the required space only */
+            width: 21%;
+        }
 
+        #display {
+            margin: 0px;
+            display: block;
+            margin: auto;
+            text-align: center;
+        }
+
+        #topimg {
+            display: block;
+            margin: auto;
+            width: 80%;
+        }
+
+        .box{
+            border: 2px solid red;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+            /* box-sizing: border-box; */
+            border-bottom-style: dotted;
+            display: inline-block;
+        }
+
+        /* position: static(:default), absolute, relative, fixed, sticky */
+        #box3{
+            /* relative: relative to its normal position */
+            /* absolute: relative to its site's parent position */
+            /* fixed: to be fixed at specific position even on scrolling */
+            /* sticky:  to stick to top while scrooling*/
+            position: fixed;
+            bottom: 34px;
+            right: 34px;
+        }
+        #con{
+            background-color: rosybrown;
+        }
+        #topheading{
+            position: sticky;
+            top: 34px;
+            right: 34px;
+        }
     </style>
 </head>
 
 <body>
-    <h1>Hello</h1>hello get well soon
+    <h1 id="topheading">Hello</h1>hello get well soon
     <p>hello gi kese ho>>>???</p>
     <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id accusantium mollitia molestias vel maiores tempore
         ea consequuntur earum architecto illo!</h2>
@@ -168,8 +223,8 @@
     <!-- working with images -->
     <!-- getting random pics from source unsplash -->
     <h3>External Pic</h3>
-    <a href="http://google.com" target="_blank"><img src="https://source.unsplash.com/user/erondu/200x150"
-            alt="Sorry no internet connection"></a>
+    <a href="https://source.unsplash.com/user/erondu/200x150" target="_blank"><img
+            src="https://source.unsplash.com/user/erondu/200x150" alt="Sorry no internet connection"></a>
 
     <hr>
     <!-- working with forms -->
@@ -273,9 +328,11 @@
     <!-- working with Pseudo selectors and more disigning -->
     <h3>Pseudo Selectors</h3>
     <div class="container1" id="cont1">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet temporibus odio, nulla perspiciatis minus itaque earum possimus atque vero aspernatur ex et ipsam doloremque quibusdam distinctio. Voluptatibus et dolorem consectetur!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet temporibus odio, nulla perspiciatis minus
+            itaque earum possimus atque vero aspernatur ex et ipsam doloremque quibusdam distinctio. Voluptatibus et
+            dolorem consectetur!</p>
         <a href="" class="btn">Read more..</a>
-        <button class="btn" >Contact us</button>
+        <button class="btn">Contact us</button>
     </div>
 
     <hr>
@@ -295,6 +352,26 @@
             </ul>
         </nav>
     </header>
+
+    <hr>
+    <br>
+    <!-- Working with display property -->
+    <h3>Display property</h3>
+    <header class="top">
+        <img src="https://source.unsplash.com/user/erondu/200x150" alt="" id="topimg">
+        <h3 id="display">Welcome to the website</h3>
+    </header>
+
+    <hr>
+    <br>
+    <!-- working with positioning -->
+    <h3>Positioning</h3>
+    <div id="con">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
 
 </body>
 
