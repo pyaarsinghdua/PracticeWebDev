@@ -10,100 +10,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="style.css">
 
 <style>
-    body {
-
-        font-family: 'Open Sans', sans-serif;
-
-        color: white;
-        margin: 0px;
-        padding: 0px;
-        background: url('img/background.jpg');
-        /* height: 2500px; */
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    .left {
-        display: inline-block;
-        margin: 1%;
-        /* border: 2px solid red; */
-
-    }
-
-    .mid {
-        /* width: 33%; */
-        display: block;
-        margin: 0px auto;
-        /* border: 2px solid yellow; */
-        position: absolute;
-        top: 2%;
-        right: 20%;
-        left: 20%;
-
-    }
     
-
-    .right {
-        position: absolute;
-        right: 1%;
-        top: 2%;
-        display: inline-block;
-        margin: 2px;
-        /* border: 2px solid brown; */
-
-    }
-
-    .navbar li {
-        display: inline-block;
-        font-size: 15px;
-    }
-
-    .navbar li a {
-        color: wheat;
-        text-decoration: none;
-        margin: 20px auto;
-        padding: 34px;
-    }
-
-    .navbar li a:hover,
-    .navbar li a.active {
-        text-decoration: underline;
-        color: yellow;
-    }
-
-    .left img {
-        width: 100px;
-        height: 80px;
-        /* to invert colors */
-        filter: invert(30%);
-    }
-
-    .btn {
-        font-family: 'Baloo Bhai', cursive;
-        /* font-family: 'Open Sans', sans-serif; */
-        margin: 15px 9px;
-        background-color: black;
-        color: white;
-        /* padding: 17px 20px; */
-        border-radius: 10px;
-        border: 1px solid rgb(240, 237, 237);
-        font-size: 16px;
-        cursor: pointer;
-        display: inline;
-    }
-
-    .btn:hover {
-        font-family: 'Open Sans', sans-serif;
-        background-color: yellow;
-        border: 1px solid rgb(240, 237, 237);
-        color: rgb(179, 35, 35);
-    }
-    #logo:hover{
-        filter: invert(0%);
-    }
 </style>
 
 <body>
@@ -113,6 +23,7 @@
         <!-- left box for logo -->
         <div class="left">
             <a href="http://google.com" target="_blank"><img src="img/logo.png" alt="LOGO" id="logo"></a>
+            <div class="logoname">DUA GYM</div>
         </div>
 
         <!-- mid box for navbar -->
@@ -131,6 +42,20 @@
 
         </div>
     </header>
+
+    <div class="container">
+        <h1>Join Your LOVE</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Name">
+                <input type="text" name="" placeholder="Enter Your Age">
+                <input type="text" name="" placeholder="Enter Your Gender">
+                <input type="text" name="" placeholder="Enter Your Locality">
+                <input type="text" name="" placeholder="Enter Your Phone Number">
+                <button class="btn" id="submit">SUBMIT</button>
+            </div>
+        </form>
+    </div>
 </body>
 
 </html>
