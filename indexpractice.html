@@ -15,183 +15,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Andika+New+Basic:ital@1&display=swap" rel="stylesheet">
 
     <!-- to include external CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_pra.css">
 
     <!-- to include java script -->
     <script src="java.js"></script>
 
     <!-- working with inline css -->
-    <style>
-        p {
-            color: rgb(87, 9, 9);
-            font-family: 'Andika New Basic', sans-serif;
-            font-weight: bold;
-            line-height: 1.3em;
-        }
-
-        .container {
-            width: 700px;
-            border: 2px solid red;
-            margin: 40px auto;
-            box-sizing: border-box;
-        }
-
-        .item {
-            border: 3px solid rgb(148, 114, 114);
-            margin: 12px 3px;
-            padding: 12px 16px;
-            background: #ebff49;
-            box-sizing: border-box;
-        }
-
-        #fruits {
-            float: left;
-            width: 48%;
-            box-sizing: border-box;
-            text-align: justify;
-        }
-
-        #computer {
-            float: left;
-            width: 48%;
-            box-sizing: border-box;
-            text-align: justify;
-        }
-
-        #stationary {
-            /* float: left; */
-            width: 97%;
-            box-sizing: border-box;
-            clear: both;
-            text-align: justify;
-        }
-
-        input#name {
-            color: rgba(128, 255, 0, 0.884);
-        }
-
-        h3 {
-            text-align: justify;
-        }
-
-        .container1 {
-            border: 2px solid red;
-            background-color: rosybrown;
-            padding: 34px;
-            margin: 34px;
-            width: 666px;
-            margin: auto;
-        }
-
-        a:hover {
-            /* this property defines to what changes to occur while pointing */
-            color: rgb(52, 223, 18);
-            /* background-color: cornflowerblue; */
-        }
-
-        a:visited {
-            color: cyan;
-            background-color: darkkhaki;
-        }
-
-        .btn {
-            background-color: salmon;
-            padding: 6px;
-            border: none;
-            cursor: pointer;
-            font-size: 13px;
-            border-radius: 4px;
-            text-decoration: none;
-            color: black;
-        }
-
-        .navbar {
-            background-color: rgb(136, 53, 136);
-            border-radius: 36px;
-        }
-
-        .navbar ul {
-            overflow: auto;
-            /* width: 490px; */
-        }
-
-        .navbar li {
-            float: left;
-            /* float results in overflow from the parent */
-            list-style: none;
-            padding: 34px;
-        }
-
-        .navbar li a {
-            text-decoration: none;
-            color: black;
-        }
-
-        .search {
-            float: right;
-            padding: 32px;
-            margin-right: 50px;
-        }
-
-        #search {
-            border-radius: 4px;
-            box-shadow: black;
-        }
-
-        .navbar li a:hover {
-            color: red;
-        }
-
-        .top {
-            margin: auto;
-            border: 2px solid red;
-            /* display: inline; using this the block will take the required space only */
-            width: 21%;
-        }
-
-        #display {
-            margin: 0px;
-            display: block;
-            margin: auto;
-            text-align: center;
-        }
-
-        #topimg {
-            display: block;
-            margin: auto;
-            width: 80%;
-        }
-
-        .box{
-            border: 2px solid red;
-            width: 150px;
-            height: 150px;
-            margin: 2px;
-            /* box-sizing: border-box; */
-            border-bottom-style: dotted;
-            display: inline-block;
-        }
-
-        /* position: static(:default), absolute, relative, fixed, sticky */
-        #box3{
-            /* relative: relative to its normal position */
-            /* absolute: relative to its site's parent position */
-            /* fixed: to be fixed at specific position even on scrolling */
-            /* sticky:  to stick to top while scrooling*/
-            position: fixed;
-            bottom: 34px;
-            right: 34px;
-        }
-        #con{
-            background-color: rosybrown;
-        }
-        #topheading{
-            display: inline;
-            position: sticky;
-            top: 34%;
-            left: 1%;
-        }
-    </style>
 </head>
 
 <body>
@@ -373,6 +202,31 @@
         <div class="box" id="box3">3</div>
         <div class="box" id="box4">4</div>
     </div>
+
+    <br>
+    <hr>
+    <!-- working with visdibility and z-index -->
+    <h3>Visibility and z-index</h3>
+    <div>
+        <div class="box-v" id="box-1"></div>
+        <div class="box-v" id="box-2"></div>
+        <div class="box-v" id="box-3"></div>
+        <div class="box-v" id="box-4"></div>
+    </div>
+
+    <br>
+    <hr>
+    <!-- working with flexbox -->
+    <h3>FlexBox</h3>
+    <div class="flexbox">
+        <div class="itemf" id="flexbox1">First Box</div>
+        <div class="itemf" id="flexbox2">Second Box</div>
+        <div class="itemf" id="flexbox3">Third Box</div>
+        <div class="itemf" id="flexbox4">ForthBox</div>
+        <div class="itemf" id="flexbox5">Fifth Box</div>
+        <div class="itemf" id="flexbox6">Seventh Box</div>
+    </div>
+
 
 </body>
 
